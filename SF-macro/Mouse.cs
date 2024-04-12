@@ -8,8 +8,11 @@ namespace SF_macro
 {
     public class Mouse
     {
+        // NOTES:
+        // The hex code for left click is supposed to be 0x02 and then 0x04 but they are flipped for some reason... 0x02 then 0x04 performs a right click
+        // and 0x08 then 0x10 performs a left click
+        // The x and y coordinates given to the mouse_event method do nothing, weird dll stuff I assume
         public static void RightClick() {
-            // Even though these are the hex codes for left click down / left click up, it actually performs a right click for some reason
             mouse_event(0x02, 0, 0, 0, (UIntPtr)0);
             mouse_event(0x04, 0, 0, 0, (UIntPtr)0);
         }
@@ -21,7 +24,7 @@ namespace SF_macro
         }
         public static void LeftClick()
         {
-            // Even though these are the hex codes for right click down / right click up, it actually performs a left click for some reason
+
             mouse_event(0x08, 0, 0, 0, (UIntPtr)0);
             mouse_event(0x10, 0, 0, 0, (UIntPtr)0);
         }
