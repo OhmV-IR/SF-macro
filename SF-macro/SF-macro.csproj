@@ -47,7 +47,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Inputs.cs" />
-    <Compile Include="Clicks.cs" />
+    <Compile Include="Mouse.cs" />
     <Compile Include="Keys.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

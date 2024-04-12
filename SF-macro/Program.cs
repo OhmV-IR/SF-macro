@@ -16,9 +16,9 @@ namespace SF_macro
             Thread.Sleep(2000);
             var width = Screen.PrimaryScreen.WorkingArea.Width;
             var height = Screen.PrimaryScreen.WorkingArea.Height;
-            Clicks.LeftClick(width / 2, height / 2);
+            Mouse.LeftClick(width / 2, height / 2);
             Thread.Sleep(2000);
-            //Keys.SendKeyPress(Inputs.KeyCode.KEY_3);
+            Keys.SendKeyPress(Inputs.KeyCode.KEY_3);
         }
     }
 }
